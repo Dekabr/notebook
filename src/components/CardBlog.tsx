@@ -27,17 +27,17 @@ export const CardBlog: FC<ICardBlog> = ({ data, title, text }) => {
     <Card sx={{ maxWidth: '50%' }}>
       <CardHeader
         avatar={<MenuEmotioanal />}
-        action={
-          // <DialogEditText text={text} title={title} data={data} />
-          <DialogText status={'Edit'} text={text} title={title} data={data} />
-        }
+        // action={
+        // <DialogEditText text={text} title={title} data={data} />
+        //   <DialogText status={'Edit'} text={text} title={title} data={data} />
+        // }
         title={title}
         subheader="September 14, 2016"
       />
       <CardActionArea>
         <CardContent>
           {/*<DialogViewText text={text} title={title} data={data} />*/}
-          <DialogText status={'View'} text={text} title={title} data={data} />
+          <DialogText text={text} title={title} data={data} />
         </CardContent>
       </CardActionArea>
       <CardActions disableSpacing>

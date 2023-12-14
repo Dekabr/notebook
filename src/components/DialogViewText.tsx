@@ -25,7 +25,7 @@ interface IFullScreenDialog {
   title: string
   data: string
   handleClose: () => void
-  setMode: (mode: string) => void
+  setMode: (mode: boolean) => void
 }
 
 export const DialogViewText: FC<IFullScreenDialog> = ({
@@ -75,12 +75,12 @@ export const DialogViewText: FC<IFullScreenDialog> = ({
           <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div">
             {data} - {title}
           </Typography>
-          <IconButton onClick={() => setMode('Edit')}>
+          <IconButton onClick={() => setMode(true)}>
             <Edit />
           </IconButton>
         </Toolbar>
       </AppBar>
-      <Container maxWidth="md" style={{ paddingTop: 10 }}>
+      <Container maxWidth="md" style={{ paddingTop: 28 }}>
         <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div">
           {text}
         </Typography>

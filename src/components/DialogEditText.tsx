@@ -30,7 +30,7 @@ interface IFullScreenDialog {
   title: string
   data: string
   handleClose: () => void
-  setMode: (mode: string) => void
+  setMode: (mode: boolean) => void
 }
 
 export const DialogEditText: FC<IFullScreenDialog> = ({
@@ -74,7 +74,7 @@ export const DialogEditText: FC<IFullScreenDialog> = ({
           <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div">
             {data} - {title}
           </Typography>
-          <IconButton onClick={() => setMode('View')}>
+          <IconButton onClick={() => setMode(false)}>
             <VisibilityIcon />
           </IconButton>
         </Toolbar>
@@ -83,12 +83,20 @@ export const DialogEditText: FC<IFullScreenDialog> = ({
         <Box
           component="form"
           sx={{
-            '& .MuiTextField-root': { m: 1, width: '100ch' },
+            '& .MuiInputBase-input': {
+              fontSize: 20,
+              lineHeight: 1.6,
+            },
+            '& .MuiInputBase-root': {
+              padding: '18px 8px',
+              margin: '0 8px',
+            },
           }}
           noValidate
           autoComplete="off"
         >
           <TextField
+            fullWidth
             id="outlined-multiline-flexible"
             label=""
             multiline

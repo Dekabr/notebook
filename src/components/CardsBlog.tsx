@@ -17,14 +17,7 @@ const cards = [
   {
     data: 'September 14, 2016',
     title: 'Shrimp and Chorizo Paella',
-    text:
-      ' This impressive paella is a perfect party dish and a fun meal to cook\n' +
-      '          together with your guests. Add 1 cup of frozen peas along with the\n' +
-      '          mussels, if you like.This impressive paella is a perfect party dish\n' +
-      '          and a fun meal to cook together with your guests. Add 1 cup of frozen\n' +
-      '          peas along with the mussels, if you like.This impressive paella is a\n' +
-      '          perfect party dish and a fun meal to cook together with your guests.\n' +
-      '          Add 1 cup of frozen peas along with the mussels, if you like.',
+    text: 'This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.',
     // emotion: 1,
   },
 ]
