@@ -43,24 +43,6 @@ export const DialogText: FC<IFullScreenDialog> = ({ text, title, data }) => {
 
   return (
     <React.Fragment>
-      {/*{status === 'Edit' ? (*/}
-      {/*  <>*/}
-      {/*    <IconButton onClick={handleClickOpen}>*/}
-      {/*      <Edit />*/}
-      {/*    </IconButton>*/}
-      {/*  </>*/}
-      {/*) : (*/}
-      {/*  <>*/}
-      {/*    <Typography*/}
-      {/*      align="left"*/}
-      {/*      variant="body2"*/}
-      {/*      color="text.secondary"*/}
-      {/*      onClick={handleClickOpen}*/}
-      {/*    >*/}
-      {/*      {text}*/}
-      {/*    </Typography>*/}
-      {/*  </>*/}
-      {/*)}*/}
       <Typography
         align="left"
         variant="body2"
@@ -112,6 +94,24 @@ export const DialogText: FC<IFullScreenDialog> = ({ text, title, data }) => {
       {/*>*/}
       {/*  Hello from View*/}
       {/*</Dialog>*/}
+      {/*{status === 'Edit' ? (*/}
+      {/*  <>*/}
+      {/*    <IconButton onClick={handleClickOpen}>*/}
+      {/*      <Edit />*/}
+      {/*    </IconButton>*/}
+      {/*  </>*/}
+      {/*) : (*/}
+      {/*  <>*/}
+      {/*    <Typography*/}
+      {/*      align="left"*/}
+      {/*      variant="body2"*/}
+      {/*      color="text.secondary"*/}
+      {/*      onClick={handleClickOpen}*/}
+      {/*    >*/}
+      {/*      {text}*/}
+      {/*    </Typography>*/}
+      {/*  </>*/}
+      {/*)}*/}
     </React.Fragment>
   )
 }

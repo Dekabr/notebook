@@ -4,6 +4,7 @@ import CloseIcon from '@mui/icons-material/Close'
 // import { Edit } from '@mui/icons-material'
 import VisibilityIcon from '@mui/icons-material/Visibility'
 // import { TransitionProps } from '@mui/material/transitions'
+// import { DateField } from '@mui/x-date-pickers/DateField'
 import {
   Container,
   TextField,
@@ -71,8 +72,32 @@ export const DialogEditText: FC<IFullScreenDialog> = ({
           >
             <CloseIcon />
           </IconButton>
-          <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div">
-            {data} - {title}
+          {/*<TextField label="" defaultValue={title} size="small" />*/}
+          <Typography
+            sx={{
+              ml: 2,
+              flex: 1,
+              '& .MuiInputBase-input': {
+                fontSize: 20,
+                lineHeight: 1.6,
+              },
+            }}
+            variant="h6"
+            component="div"
+          >
+            {/*<DateField*/}
+            {/*  label="Dash separator"*/}
+            {/*  value={'2022-04-17'}*/}
+            {/*  format="MM-DD-YYYY"*/}
+            {/*/>*/}
+            <TextField
+              label=""
+              defaultValue={title}
+              size="small"
+              sx={{ width: '25ch' }}
+            />
+
+            {/*{data} - {title}*/}
           </Typography>
           <IconButton onClick={() => setMode(false)}>
             <VisibilityIcon />
